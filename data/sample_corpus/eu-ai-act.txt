@@ -1,0 +1,31 @@
+# EU AI Act — Overview
+
+The EU Artificial Intelligence Act is Regulation (EU) 2024/1689. It entered into force on 1 August 2024 and is the world's first comprehensive law on artificial intelligence. It applies to providers and deployers of AI systems in the European Union, and to providers outside the EU whose systems are used inside the EU. The Act takes a risk-based approach: the stricter the risk, the stricter the rules. It defines four risk levels: unacceptable risk, high risk, limited risk, and minimal risk.
+
+## 1. Unacceptable risk — prohibited practices
+
+Article 5 prohibits AI practices that present an unacceptable risk. The prohibitions apply from 2 February 2025. They include subliminal techniques that materially distort a person's behaviour, exploiting vulnerabilities linked to age, disability or a specific social or economic situation, and social scoring by public authorities that leads to unjustified or disproportionate detrimental treatment. The Act also bans predictive policing that relies solely on profiling a person to assess the likelihood of offending, the untargeted scraping of facial images from the internet or CCTV to build facial recognition databases, emotion inference in the workplace and in education, and biometric categorisation systems that infer sensitive attributes such as race, political opinions or sexual orientation. Real-time remote biometric identification in publicly accessible spaces for law enforcement is prohibited, with narrowly defined exceptions that require prior judicial authorisation.
+
+## 2. High-risk AI systems
+
+Article 6 defines high-risk AI systems in two ways. First, AI systems that are a safety component of a product, or are themselves a product, covered by EU harmonisation legislation such as the Medical Devices Regulation or the Machinery Regulation. Second, AI systems listed in Annex III. Annex III covers biometrics, critical infrastructure such as water and electricity, education and vocational training, employment and worker management, access to essential private and public services including credit scoring, law enforcement, migration and border control, and the administration of justice and democratic processes. Providers of high-risk systems must meet the obligations in Articles 9 to 15, and most high-risk systems must undergo a conformity assessment before they can be placed on the market.
+
+## 3. Provider obligations for high-risk systems
+
+Article 9 requires a risk management system that runs throughout the system's lifecycle, identifying and analysing known and foreseeable risks and adopting measures to address them. Article 10 requires data governance: training, validation and testing datasets must be relevant, representative, and examined for biases. Article 11 requires technical documentation that demonstrates compliance. Article 12 requires automatic record-keeping through logs. Article 13 requires transparency, so deployers can understand how the system works and interpret its outputs. Article 14 requires human oversight, including the ability for a person to intervene or stop the system. Article 15 requires an appropriate level of accuracy, robustness and cybersecurity. Deployers also have duties under Article 26, including using the system as instructed, monitoring its operation, and keeping logs.
+
+## 4. Transparency and limited-risk systems
+
+Article 50 sets transparency obligations for limited-risk systems. Providers must ensure that people know they are interacting with an AI system, unless that is obvious from the circumstances. AI-generated content, including deep fakes, must be labelled as artificially generated or manipulated. AI systems that generate or manipulate image, audio or video content must disclose that the content is artificial. Deployers of emotion recognition or biometric categorisation systems must inform the people exposed to them. These transparency duties apply from 2 August 2026.
+
+## 5. Fines and enforcement
+
+The Act sets some of the largest fines in EU law. Breaching the prohibited practices in Article 5 can lead to fines of up to 35 million euros or 7 percent of worldwide annual turnover, whichever is higher. Most other infringements, including failing to meet the high-risk obligations, can lead to fines of up to 15 million euros or 3 percent of worldwide annual turnover. Supplying incorrect, incomplete or misleading information to authorities can lead to fines of up to 7.5 million euros or 1 percent of turnover. Enforcement is shared between the EU AI Office, which supervises general-purpose AI models, and national market surveillance authorities in each member state.
+
+## 6. Application timeline
+
+The Act applies in stages. The prohibitions in Article 5 and the AI literacy duty in Article 4 apply from 2 February 2025. The obligations for general-purpose AI models apply from 2 August 2025. The high-risk obligations for Annex III systems and the transparency duties apply from 2 August 2026. High-risk systems covered by Annex I product legislation must comply by 2 August 2027. Providers should plan compliance work against these dates, not against the date the Act entered into force.
+
+## 7. AI literacy
+
+Article 4 requires providers and deployers to ensure that their staff and other persons dealing with AI systems have a sufficient level of AI literacy. AI literacy means the skills, knowledge and understanding needed to make informed decisions about AI systems and to be aware of their opportunities, risks and possible harm. The duty applies from 2 February 2025 and covers everyone in an organisation who operates or uses an AI system, not only technical staff.
