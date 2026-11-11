@@ -1,0 +1,43 @@
+# OWASP Top 10 for LLM Applications 2025
+
+The OWASP Top 10 for LLM Applications is a community list of the most critical security risks for applications built on large language models. The 2025 edition lists ten risks, LLM01 to LLM10. It is a risk awareness document, not a compliance standard: it helps teams prioritise defences, but it does not certify an application as secure.
+
+## 1. LLM01 Prompt Injection
+
+Prompt injection happens when an attacker inserts malicious instructions into the input that the model processes, causing the model to follow the attacker's instructions instead of the developer's. Direct injection puts instructions in the user's own prompt. Indirect injection hides instructions in data the model retrieves, such as a web page, a document or an email. Defences include treating retrieved content as untrusted data rather than instructions, validating and sanitising inputs, and limiting what the model can do when it acts on untrusted input.
+
+## 2. LLM02 Sensitive Information Disclosure
+
+Sensitive information disclosure happens when a model reveals confidential data it should not share. This can happen when the model memorised sensitive data from its training set, when an application passes confidential context to the model and the model repeats it to the wrong user, or when an attacker extracts system prompts or internal instructions. Defences include data sanitisation before training and before prompting, access controls on retrieved context, and output filtering for known sensitive patterns.
+
+## 3. LLM03 Supply Chain
+
+Supply chain risks come from the third-party components an LLM application depends on: pre-trained models, datasets, plugins, frameworks and hosted services. A compromised model or dataset can poison every application that uses it, and a vulnerable plugin can give an attacker access to the application's tools. Defences include verifying the provenance of models and datasets, pinning versions, scanning dependencies, and maintaining an inventory of every component.
+
+## 4. LLM04 Data and Model Poisoning
+
+Data and model poisoning happens when an attacker corrupts the data used to train or fine-tune a model, or the documents used in retrieval-augmented generation. Poisoned data can bias the model's outputs, insert backdoors, or make the model repeat false information. In a RAG system, a poisoned document in the retrieval corpus can override the correct sources when it is retrieved. Defences include validating data sources, tracking provenance, detecting anomalous documents, and keeping retrieval corpora limited to trusted sources.
+
+## 5. LLM05 Improper Output Handling
+
+Improper output handling happens when an application's output from the model is passed to another system without validation, such as a database, a shell, a browser or an internal API. A model output can contain SQL, JavaScript or shell commands, so treating it as safe text can lead to injection attacks. Defences include validating and encoding model output before use, applying the principle of least privilege to downstream systems, and never executing model output directly.
+
+## 6. LLM06 Excessive Agency
+
+Excessive agency happens when an LLM application is given more tools, permissions or autonomy than it needs. An agent that can read files, send email and run code is far more dangerous when it is tricked than one that can only answer questions. Defences include giving the model the minimum permissions it needs, requiring human approval for consequential actions, and limiting the tools available in each context.
+
+## 7. LLM07 System Prompt Leakage
+
+System prompt leakage happens when an attacker tricks the model into revealing its system prompt or other internal instructions. System prompts often contain sensitive configuration, safety rules and business logic. Defences include keeping sensitive instructions out of the system prompt where possible, separating secrets from prompts, and testing the application with prompt extraction attempts.
+
+## 8. LLM08 Vector and Embedding Weaknesses
+
+Vector and embedding weaknesses are risks specific to retrieval systems. Attackers can craft documents that are retrieved for unrelated queries, poison an embedding index, or extract information from stored embeddings. Because embeddings are difficult to interpret, a poisoned document can be hard to spot by inspection. Defences include validating documents before indexing, monitoring retrieval behaviour, and applying access controls to the vector store.
+
+## 9. LLM09 Misinformation
+
+Misinformation happens when a model generates false information that users treat as true. LLMs can produce confident, well-written statements that are wrong, and retrieval does not fix this if the retrieved sources are wrong or misinterpreted. Defences include grounding answers in retrieved sources, citing sources, showing uncertainty, and adding human review for high-stakes answers.
+
+## 10. LLM10 Unbounded Consumption
+
+Unbounded consumption happens when an application allows unlimited LLM usage, leading to runaway costs or denial of service. An attacker can send many expensive requests, or craft prompts that cause long, costly generations. Defences include rate limiting, per-user quotas, input size limits, output token limits, and monitoring spend in real time.
