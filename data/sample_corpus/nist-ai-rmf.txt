@@ -1,0 +1,27 @@
+# NIST AI Risk Management Framework 1.0
+
+The NIST Artificial Intelligence Risk Management Framework, AI RMF 1.0, was published as NIST AI 100-1 in January 2023. It is a voluntary framework for managing the risks that AI systems pose to individuals, organisations and society. It was developed over 18 months with more than 240 contributing organisations. The framework is intended to be a living document and is accompanied by the AI RMF Playbook, an online companion with suggested actions. NIST has also published a Generative AI Profile, NIST-AI-600-1, in July 2024, which applies the framework to generative AI systems.
+
+## 1. Trustworthy AI characteristics
+
+The framework describes seven characteristics of trustworthy AI. First, valid and reliable: the system performs as intended and its outputs can be checked. Second, safe: the system does not endanger human life, health, property or the environment under defined conditions. Third, secure and resilient: the system resists unauthorised access and can recover from adverse events. Fourth, accountable and transparent: responsibility for the system is clear and its operations can be explained to the people affected. Fifth, explainable and interpretable: the system's outputs can be understood by the people who use or are affected by them. Sixth, privacy-enhanced: the system protects personal data and the privacy of individuals. Seventh, fair, with harmful bias managed: the system does not produce unjustified differential outcomes. These characteristics overlap and trade off against each other, so organisations must balance them for their context.
+
+## 2. The four functions: GOVERN
+
+The framework is organised into four functions. GOVERN is a cross-cutting function that creates the culture and structure for risk management. It covers policies and procedures, roles and responsibilities, workforce diversity and training, and the organisation's risk tolerance. Risk tolerance is the level of risk an organisation is willing to accept, and it must be defined explicitly, because it determines which risks are treated and which are accepted. GOVERN also covers engagement with external stakeholders and the integration of risk management into the organisation's existing governance.
+
+## 3. The four functions: MAP
+
+MAP establishes the context in which an AI system will be used. It covers the system's purpose and intended use, its benefits and costs, the people and groups affected, and the assumptions and limitations of the system. MAP includes categorising the system, assessing its impacts on individuals and communities, and identifying the data and the human-AI interaction involved. A system that is mapped carefully is less likely to be used in a context it was not designed for, which is a common source of AI failures.
+
+## 4. The four functions: MEASURE
+
+MEASURE uses quantitative and qualitative methods to analyse, assess, benchmark and monitor AI risk. It covers selecting metrics, carrying out testing, evaluation, verification and validation, known as TEVV, and monitoring the system once it is deployed. TEVV should be performed throughout the lifecycle, not only before deployment, because AI systems change as data and usage change. MEASURE also covers tracking incidents and near misses, so that problems are found and fixed before they cause harm.
+
+## 5. The four functions: MANAGE
+
+MANAGE prioritises and acts on the risks identified by MAP and MEASURE. It covers deciding which risks to treat, transfer, avoid or accept, allocating resources to the highest risks first, and putting mitigations in place. MANAGE includes planning for decommissioning a system that cannot be made safe, and creating feedback processes so that lessons from one system improve the next. Risk management is not a one-off activity: MAP, MEASURE and MANAGE repeat as the system and its context change.
+
+## 6. Framing risk
+
+The framework defines AI risk as the combination of the likelihood of an occurrence and the magnitude of its impact. Risk measurement is difficult for AI systems because their behaviour can change with new data, because harms can be indirect and delayed, and because there are often no agreed benchmarks. The framework therefore treats risk management as a socio-technical activity: it involves people, processes and organisational culture, not only technical testing. Human-AI teaming is part of this picture: the risks of a system depend on how people actually use it, not only on how it performs in a laboratory.
