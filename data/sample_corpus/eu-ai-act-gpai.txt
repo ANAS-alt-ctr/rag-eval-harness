@@ -1,0 +1,19 @@
+# EU AI Act — General-Purpose AI Models
+
+General-purpose AI models are AI models that display significant generality and are capable of competently performing a wide range of distinct tasks, regardless of how they are placed on the market. Chapter V of the AI Act sets obligations for providers of such models, with a separate, stricter tier for models with systemic risk.
+
+## 1. Systemic risk threshold
+
+A general-purpose AI model is presumed to have systemic risk when the cumulative amount of compute used for its training is greater than 10 to the power of 25 floating point operations, known as 10^25 FLOPs. The EU AI Office may also designate a model as having systemic risk based on other criteria, such as the number of users or the capabilities demonstrated in evaluations. Providers can rebut the presumption with evidence that the model does not in fact present systemic risk. Models below the threshold still have documentation and transparency duties, but not the additional systemic-risk duties.
+
+## 2. Obligations for all general-purpose AI models
+
+Providers of general-purpose AI models must draw up technical documentation covering the training process, the model's architecture, and the results of evaluations. They must put in place a policy to comply with EU copyright law, including a policy to respect reservations of rights expressed by rights holders. They must publish a sufficiently detailed summary of the content used for training the model. These obligations apply from 2 August 2025. Providers of models released under a free and open-source licence are exempt from the documentation duties, except for the training-data summary and the copyright policy.
+
+## 3. Additional duties for systemic-risk models
+
+Providers of general-purpose AI models with systemic risk must perform model evaluations, including adversarial testing, to identify and mitigate systemic risks. They must assess and mitigate possible systemic risks, track and report serious incidents, and ensure an adequate level of cybersecurity protection for the model and its physical infrastructure. They must report relevant information about serious incidents to the EU AI Office without undue delay. The EU AI Office has published a Code of Practice to help providers meet these duties.
+
+## 4. The EU AI Office
+
+The EU AI Office was established inside the European Commission to supervise general-purpose AI models. It can request documentation, carry out evaluations, and require providers to take corrective action. It also supports national market surveillance authorities, which enforce the rules for high-risk systems. Providers of general-purpose AI models with systemic risk must notify the AI Office and cooperate with its investigations.
