@@ -19,7 +19,7 @@ it runs on a laptop with no GPU. The LLM is OpenAI-compatible and configured
 ## Quick start
 
 ```bash
-git clone <your-repo> rag-eval-harness   # or copy this folder
+git clone https://github.com/ANAS-alt-ctr/rag-eval-harness.git   # or copy this folder
 cd rag-eval-harness
 python -m venv .venv
 .venv\Scripts\activate        # Windows; on macOS/Linux: source .venv/bin/activate
