@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-eval-harness"
+version = "0.1.0"
+description = "RAG System with Failure Analysis + LLM Eval Harness over AI-governance documents."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Anas Riaz" }]
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+    "numpy>=1.26",
+    "rank-bm25>=0.2.2",
+    "chromadb>=0.5",
+    "sentence-transformers>=3.0",
+    "pypdf>=4.0",
+    "streamlit>=1.35",
+]
+
+[project.optional-dependencies]
+langfuse = ["langfuse>=2.0"]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.setuptools.packages.find]
+include = ["rag_eval_harness*"]
