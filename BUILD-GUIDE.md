@@ -30,7 +30,7 @@ ChromaDB stores its data in files under `data/chroma/`; SQLite is not used.
 cd C:\Users\anasr\path\to\rag-eval-harness
 
 # Otherwise clone your repo:
-git clone <your-repo-url> rag-eval-harness
+git clone https://github.com/ANAS-alt-ctr/rag-eval-harness.git
 cd rag-eval-harness
 ```
 
