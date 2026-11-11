@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Secrets -- never commit these
+.env
+*.pem
+*.key
+
+# Data (large / generated)
+data/corpus/
+data/chroma/
+data/*.db
+data/*.zip
+logs/
+eval/results.json
+eval/results-*.json
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.pytest_cache/
