@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-and-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run unit tests + mock-LLM smoke test
+        run: |
+          python -m pytest -q
+          python scripts/smoke_test.py
+
+      - name: Run the golden-set eval (mock LLM, poison injected, no API key)
+        run: |
+          python scripts/run_eval.py --llm mock --embedder hash \
+            --store memory --poison --out eval/results.json
+
+      - name: Baseline gate -- fail on regression
+        run: |
+          python scripts/run_eval.py --llm mock --embedder hash \
+            --store memory --poison --out eval/results.json \
+            --check-baseline
+
+      - name: Upload eval results
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-results
+          path: eval/results.json
